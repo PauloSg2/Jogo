@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #121212;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin-top: 20px;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 5px;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(0, 0, 0);
+    border: 2px solid #444;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+}
+
+.cell.occupied {
+    cursor: not-allowed;
+}
+
+/* Cores personalizadas */
+.cell.white {
+    color: rgb(255, 255, 255);
+    /* Cor Jogador 0 (branco) */
+}
+
+.cell.red {
+    color: rgb(255, 0, 0);
+    /* Cor Jogador 1 (vermelho) */
+}
+
+.status {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
